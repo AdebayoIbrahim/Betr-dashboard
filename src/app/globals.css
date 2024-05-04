@@ -10,5 +10,75 @@
 }
 
 body {
-  background: var(--profile-bg);
+  background: var(--body-bg);
+  /* background: red; */
+}
+
+.profiles {
+  width: 100%;
+}
+.profile_images {
+  background: url(../assets/4000637.png);
+  background-size: cover;
+}
+.grid_layout_details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* gap: 1.2rem; */
+}
+.grid_sub_two {
+  grid-column: span 2;
+}
+
+/* conditional syling of currently clicked button*/
+.button_1,
+.button_2,
+.button_3 {
+  text-overflow: ellipsis;
+}
+.button_1::after {
+  content: "";
+  position: absolute;
+  background: rgb(236, 148, 163);
+  width: calc(100% + 20px);
+  left: 50%;
+  height: 2px;
+  bottom: -70%;
+  transform: translate(-50%, -50%);
+  animation: Fadein 300ms forwards ease-in-out;
+  transform-origin: left;
+}
+.button_2::after {
+  content: "";
+  position: absolute;
+  background: rgb(236, 148, 163);
+  width: calc(100% + 20px);
+  left: 50%;
+  height: 2px;
+  bottom: -70%;
+  transform: translate(-50%, -50%);
+  animation: Fadein 300ms forwards ease-in-out;
+  transform-origin: left;
+}
+.button_3::after {
+  content: "";
+  position: absolute;
+  background: rgb(236, 148, 163);
+  width: calc(100% + 20px);
+  left: 50%;
+  height: 2px;
+  bottom: -70%;
+  transform: translate(-50%, -50%);
+  animation: Fadein 300ms forwards ease-in-out;
+  transform-origin: left;
+}
+
+/* animation */
+@keyframes Fadein {
+  from {
+    transform: scaleX(0%) translate(-50%, -50%);
+  }
+  to {
+    transform: scaleX(100%) translate(-50%, -50%);
+  }
 }

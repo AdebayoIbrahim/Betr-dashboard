@@ -29,7 +29,7 @@ const Nav = () => {
             </div>
             <div className="flex flex-col gap-y-0">
               <p className="text-[#d9d9d9] text-center text-[14px]">
-                Welcome Guests
+                Welcome Guest
               </p>
               {userProfiles.map((d) => {
                 return <p className="text-[#d9d9d9] text-[14px]">{d.email}</p>;
