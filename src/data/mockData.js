@@ -28,7 +28,11 @@ const userProfiles = [
         dateGenerated: "20/03/2024",
         noteVersion: "8.1.0",
       },
-      {},
+      {
+        Releasename: "Open Payment",
+        dateGenerated: "21/02/2024",
+        noteVersion: "5.1.0",
+      },
     ],
   },
 ];
