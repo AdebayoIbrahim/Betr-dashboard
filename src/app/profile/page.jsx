@@ -31,7 +31,7 @@ const Dashboard = () => {
                   {/* grid_sub_one==usernames*/}
                   <BasicDetails content={user} />
                   {/* main_sub_grid_two */}
-                  <Maininfo />
+                  <Maininfo content={user} />
                 </div>
               );
             })}

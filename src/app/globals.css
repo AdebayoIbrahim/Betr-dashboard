@@ -12,6 +12,7 @@
 body {
   background: var(--body-bg);
   /* background: red; */
+  color: #ffff;
 }
 
 .profiles {
@@ -81,4 +82,8 @@ body {
   to {
     transform: scaleX(100%) translate(-50%, -50%);
   }
+}
+
+.list_marker::marker {
+  color: rgb(99, 199, 199);
 }

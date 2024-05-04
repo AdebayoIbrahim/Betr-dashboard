@@ -1,6 +1,6 @@
 export const BasicDetails = ({ content }) => {
   return (
-    <div className="grid_sub_one mt-[30%] flex flex-col gap-y-[1.2rem] pl-2">
+    <div className="grid_sub_one mt-[30%] flex flex-col gap-y-[1.2rem] pl-4">
       <div className="">
         <h4 className="text-[#ffff] text-[1.2rem]">{content.name}</h4>
         <p className="text-[#9d9d9d] text-[.9rem]">{content.email}</p>

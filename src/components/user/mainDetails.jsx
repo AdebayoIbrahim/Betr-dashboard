@@ -1,7 +1,8 @@
 "use client";
 import { useState } from "react";
-const Maininfo = () => {
-  const [active, setActive] = useState("active_btn_3");
+import Accessibles from "../customerdetails/Accessibilities";
+const Maininfo = ({ content }) => {
+  const [active, setActive] = useState("active_btn");
 
   const handleClick = (payload) => {
     console.log(payload);
@@ -14,15 +15,15 @@ const Maininfo = () => {
         <button
           className={`${
             active === "active_btn" && "button_1"
-          } text-gray-200 relative`}
+          } text-gray-200 relative text-[16px]`}
           onClick={() => handleClick("active_btn")}
         >
-          All
+          Accessibilities
         </button>
         <button
           className={`${
             active === "active_btn_2" && "button_2"
-          } text-gray-200 relative`}
+          } text-gray-200 relative text-[16px]`}
           onClick={() => handleClick("active_btn_2")}
         >
           Pricing System
@@ -30,7 +31,7 @@ const Maininfo = () => {
         <button
           className={`${
             active === "active_btn_3" && "button_3"
-          } text-gray-200 relative`}
+          } text-gray-200 relative text-[16px]`}
           onClick={() => handleClick("active_btn_3")}
         >
           History
@@ -38,11 +39,14 @@ const Maininfo = () => {
       </div>
       {/* dynamic-content-rendering */}
       <setcion className="detailssub_content block mt-[2rem]">
-        <div className="content_all text-[#ffff]">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-          earum nobis repellendus sunt laborum fugit quidem aperiam! Sunt,
-          dolores consectetur.
-        </div>
+        {/* rendering-contents */}
+        {active === "active_btn" ? (
+          <Accessibles content={content} />
+        ) : active === "active_btn_2" ? (
+          <h1>pricing..</h1>
+        ) : active === "active_btn_3" ? (
+          <h1>history..</h1>
+        ) : null}
       </setcion>
     </div>
   );
