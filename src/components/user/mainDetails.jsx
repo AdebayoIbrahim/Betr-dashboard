@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Accessibles from "../customerdetails/Accessibilities";
+import History from "../customerdetails/Histories";
 const Maininfo = ({ content }) => {
   const [active, setActive] = useState("active_btn");
 
@@ -45,7 +46,7 @@ const Maininfo = ({ content }) => {
         ) : active === "active_btn_2" ? (
           <h1>pricing..</h1>
         ) : active === "active_btn_3" ? (
-          <h1>history..</h1>
+          <History content={content} />
         ) : null}
       </setcion>
     </div>

@@ -17,6 +17,19 @@ const userProfiles = [
       "Priority email support for faster assistance",
       "Downloading generated Release notes within the Dashboard",
     ],
+    histories: [
+      {
+        Releasename: "Betr Beta",
+        dateGenerated: "25/05/2024",
+        noteVersion: "8.2.0",
+      },
+      {
+        Releasename: "Software Bug",
+        dateGenerated: "20/03/2024",
+        noteVersion: "8.1.0",
+      },
+      {},
+    ],
   },
 ];
 export default userProfiles;

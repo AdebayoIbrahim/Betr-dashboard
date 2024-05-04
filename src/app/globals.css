@@ -87,3 +87,25 @@ body {
 .list_marker::marker {
   color: rgb(99, 199, 199);
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table th {
+  padding: 12px;
+  font-weight: 450;
+  text-align: left;
+  border-bottom: 1px solid #9ca4ab;
+  color: #9ca4ab;
+}
+
+table tr {
+  border-bottom: 1px solid #9ca4ab;
+}
+
+table td {
+  padding: 12px;
+}
