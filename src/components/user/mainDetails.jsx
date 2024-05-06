@@ -10,9 +10,9 @@ const Maininfo = ({ content }) => {
     setActive(payload);
   };
   return (
-    <div className="grid_sub_two pt-4">
+    <div className="grid_sub_two pt-2">
       {/* nav-switch */}
-      <div className="flex items-center gap-x-[8rem]">
+      <div className="nav_details_flex flex items-center gap-x-[8rem]">
         <button
           className={`${
             active === "active_btn" && "button_1"

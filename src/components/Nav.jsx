@@ -14,7 +14,7 @@ const Nav = () => {
           <p className="text-white font-bold text-[1.2rem]">Betr Beta</p>
         </Link>
 
-        <div className="flex gap-5 items-center">
+        <div className="nav_flex_2 flex gap-5 items-center">
           {/* language-pop */}
           <div className=" cursor-pointer w-[45px] h-[40px] bg-transparent border border-blue-500 rounded-md flex justify-center items-center hover:bg-blue-600">
             <Image src={Lang} />

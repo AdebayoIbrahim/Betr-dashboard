@@ -15,8 +15,8 @@ const History = ({ content }) => {
         </div>
 
         {/* entitled_benefits_list */}
-        <div className="w-ful pt-2">
-          <table className="w-full overflow-x-auto">
+        <div className="w-ful pt-2 table_cont">
+          <table className="w-full ">
             <thead>
               <tr>
                 <th>Name</th>
