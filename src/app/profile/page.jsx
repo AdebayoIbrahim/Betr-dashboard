@@ -14,7 +14,9 @@ const Dashboard = () => {
   // image-upload-functionality
   const profileUpload = (e) => {
     const data = e.target.files[0];
-    console.log(data);
+    setImgsrc(URL.createObjectURL(data));
+    console.log(imgSrc);
+    // e.target.value = null;
   };
   return (
     <Fragment>
@@ -25,8 +27,14 @@ const Dashboard = () => {
           {/* profile_general-bg */}
           <section className="profile_images relative w-full h-[25vh]">
             {/* avatar_pic */}
-            <div className="avatar_cont absolute bottom-[-50%] left-[9rem] w-[200px] h-[200px] p-2 bg-[#2c3249] rounded-[50%] flex justify-center shadow-md z-10">
-              <Image src={imgSrc} className=" w-[80%] h-[80%]" />
+            <div className="avatar_cont absolute bottom-[-50%] left-[9rem] w-[200px] h-[200px] bg-[#2c3249] rounded-[50%] flex justify-center shadow-md z-10">
+              <Image
+                src={imgSrc}
+                className=" w-[100%] h-[100%] rounded-[50%] object-cover"
+                alt="profile_image"
+                width="200"
+                height="200"
+              />
               {/* absolut-absolute-edit-pen */}
               <div className="absolute flex items-center justify-center z-20 w-[30px] h-[30px] rounded-[50%] border-[2px] border-[#0b0f1f] bg-slate-50 bottom-6 right-[0] cursor-pointer">
                 <MdModeEdit className="fill-[#222943]" />
@@ -35,9 +43,10 @@ const Dashboard = () => {
                 <input
                   type="file"
                   name="picture_id"
+                  accept="image/*"
                   id="pic_profile"
                   className="absolute w-full h-full opacity-0 cursor-pointer"
-                  onChange={() => profileUpload()}
+                  onChange={(e) => profileUpload(e)}
                 />
               </div>
             </div>

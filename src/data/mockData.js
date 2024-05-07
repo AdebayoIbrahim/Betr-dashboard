@@ -3,7 +3,7 @@ const userProfiles = [
     id: 1,
     name: "John Kelvin",
     email: "setup017@gmail.com",
-    location: "Singapore",
+    location: "New York",
     currentPlan: "Pro",
     organization: "Business",
     status: "active",
