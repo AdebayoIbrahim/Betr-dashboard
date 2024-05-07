@@ -16,7 +16,7 @@ const Maininfo = ({ content }) => {
         <button
           className={`${
             active === "active_btn" && "button_1"
-          } text-gray-200 relative text-[16px]`}
+          } text-gray-200 relative text-[0.93rem]`}
           onClick={() => handleClick("active_btn")}
         >
           Accessibilities
@@ -24,7 +24,7 @@ const Maininfo = ({ content }) => {
         <button
           className={`${
             active === "active_btn_2" && "button_2"
-          } text-gray-200 relative text-[16px]`}
+          } text-gray-200 relative text-[0.93rem]`}
           onClick={() => handleClick("active_btn_2")}
         >
           Pricing System
@@ -32,7 +32,7 @@ const Maininfo = ({ content }) => {
         <button
           className={`${
             active === "active_btn_3" && "button_3"
-          } text-gray-200 relative text-[16px]`}
+          } text-gray-200 relative text-[0.93rem]`}
           onClick={() => handleClick("active_btn_3")}
         >
           History

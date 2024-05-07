@@ -22,7 +22,7 @@ const Dashboard = () => {
           </section>
           {/* profile_dashboard_details */}
           <section className="details_container relative">
-            <div className="line_dash absolute w-full h-[2px] top-[2.8rem]  bg-[#17213d]"></div>
+            <div className="line_dash absolute w-full h-[2px] top-[2.6rem]  bg-[#17213d]"></div>
             {userProfiles.map((user) => {
               return (
                 <div
