@@ -230,4 +230,11 @@ input[type="radio"]:checked + label::before {
     padding-right: 0.8rem !important;
     padding-left: 2rem !important;
   }
+  .nav_details_flex {
+    column-gap: 6rem;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 757px) {
 }
