@@ -10,29 +10,33 @@ const Nav = () => {
     <div>
       <nav className="flex justify-between bg-[#222943] px-[7rem] py-[.5rem]">
         <Link className="flex justify-center items-center gap-x-3" href="#">
-          <Image src={Betr} />
+          <Image src={Betr} alt="betr_logo" />
           <p className="text-white font-[600] text-[1.2rem]">Betr Beta</p>
         </Link>
 
         <div className="nav_flex_2 flex gap-5 items-center">
           {/* language-pop */}
           <div className=" cursor-pointer w-[45px] h-[40px] bg-transparent border border-blue-500 rounded-md flex justify-center items-center hover:bg-blue-600">
-            <Image src={Lang} />
+            <Image src={Lang} alt="lang" />
             {/* absolutes-dialog -language */}
           </div>
           {/* user-email */}
           <div className="flex gap-x-1 items-center">
             <div className="relative">
               <button className="flex justify-center items-center bg-[#9d9d9d] p-3 rounded-3xl">
-                <Image src={User} className="w-[16px] h-[16px]" />
+                <Image src={User} className="w-[16px] h-[16px]" alt="user" />
               </button>
             </div>
             <div className="flex flex-col gap-y-0">
               <p className="text-[#d9d9d9] text-center text-[14px]">
                 Welcome Guest
               </p>
-              {userProfiles.map((d) => {
-                return <p className="text-[#d9d9d9] text-[14px]">{d.email}</p>;
+              {userProfiles.map((d, index) => {
+                return (
+                  <p className="text-[#d9d9d9] text-[14px]" key={index}>
+                    {d.email}
+                  </p>
+                );
               })}
             </div>
           </div>

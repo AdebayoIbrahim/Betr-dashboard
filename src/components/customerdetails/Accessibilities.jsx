@@ -14,9 +14,9 @@ const Accessibles = ({ content }) => {
 
         {/* entitled_benefits_list */}
         <div className="flex flex-col gap-y-3 pt-2">
-          {content.benefits.map((benefit) => {
+          {content.benefits.map((benefit, index) => {
             return (
-              <Fragment>
+              <Fragment key={index}>
                 <li className="text-[14px] list_marker">{benefit}</li>
               </Fragment>
             );

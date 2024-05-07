@@ -153,7 +153,7 @@ div.box_file {
 input[type="radio"]:checked + label::before {
   background-color: rgb(69, 201, 253);
 }
-
+/* 
 @media only screen and (max-width: 1055px) {
   .grid_layout_details {
     grid-template-rows: repeat(2, 1fr);
@@ -197,3 +197,5 @@ input[type="radio"]:checked + label::before {
 }
 /* @media only screen and (max-width: ) {
 } */
+
+/* MEDIA_QUERIES_ALL */
