@@ -1,10 +1,27 @@
 "use client";
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import downld from "@/assets/download.svg";
 import Image from "next/image";
 const History = ({ content }) => {
   const { histories } = content;
   console.log(histories);
+
+  const [selected, setSelected] = useState(null);
+
+  const handleSelected = (curr) => {
+    setSelected(curr);
+  };
+
+  // mock-download-clik-handle
+  const handleDownload = () => {
+    if (selected != null) {
+      const getcurr = histories[selected];
+      console.log(getcurr);
+    } else {
+      alert("please select an item to download");
+    }
+  };
+
   return (
     <Fragment>
       <div>
@@ -19,8 +36,15 @@ const History = ({ content }) => {
         <div className="c-t-a-history pt-6 flex justify-between items-center pr-2">
           <h4 className="text-[0.9rem] text-[#d9f0e5]">All Files</h4>
           <div className="flex items-center gap-x-4">
-            <button className="text-[.78rem] font-[450]">Download</button>
-            <button className="text-[.78rem] font-[450]">Rename</button>
+            <button
+              className="text-[.78rem] text-green-500 font-[450]"
+              onClick={handleDownload}
+            >
+              Download
+            </button>
+            <button className="text-[.78rem] text-yellow-400 font-[450]">
+              Rename
+            </button>
             <button className="text-red-300 text-[.78rem] font-[450]">
               Delete
             </button>
@@ -53,6 +77,8 @@ const History = ({ content }) => {
                           type="radio"
                           name="filename"
                           id={`data${index}`}
+                          checked={selected === index}
+                          onChange={() => handleSelected(index)}
                         />
                         <label htmlFor={`data${index}`} className="">
                           {hist.Releasename}
