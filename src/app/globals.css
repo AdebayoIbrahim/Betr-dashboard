@@ -201,12 +201,33 @@ input[type="radio"]:checked + label::before {
 } */
 
 /* MEDIA_QUERIES_ALL */
-/* for-table-line-avoidingwrapping-to-anew-line */
+
 @media only screen and (max-width: 980px) {
+  /* for-table-line-avoidingwrapping-to-anew-line */
   .size_table {
     min-width: 95px;
   }
   .table_file {
     min-width: calc(95px * 2);
+  }
+  .grid_layout_details {
+    padding-right: 0.8rem !important;
+    padding-left: 7rem !important;
+  }
+  .c-t-a-history {
+    padding-right: 0 !important;
+  }
+  .avatar_cont {
+    left: 5rem !important;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .avatar_cont {
+    left: 2rem !important;
+  }
+  .grid_layout_details {
+    padding-right: 0.8rem !important;
+    padding-left: 2rem !important;
   }
 }
