@@ -10,6 +10,12 @@ import { MdModeEdit } from "react-icons/md";
 import { useState } from "react";
 const Dashboard = () => {
   const [imgSrc, setImgsrc] = useState(Avatar);
+
+  // image-upload-functionality
+  const profileUpload = (e) => {
+    const data = e.target.files[0];
+    console.log(data);
+  };
   return (
     <Fragment>
       <div className="dashboard-wrapper">
@@ -24,6 +30,15 @@ const Dashboard = () => {
               {/* absolut-absolute-edit-pen */}
               <div className="absolute flex items-center justify-center z-20 w-[30px] h-[30px] rounded-[50%] border-[2px] border-[#0b0f1f] bg-slate-50 bottom-6 right-[0] cursor-pointer">
                 <MdModeEdit className="fill-[#222943]" />
+
+                {/* more-edit-icon-input */}
+                <input
+                  type="file"
+                  name="picture_id"
+                  id="pic_profile"
+                  className="absolute w-full h-full opacity-0 cursor-pointer"
+                  onChange={() => profileUpload()}
+                />
               </div>
             </div>
           </section>
