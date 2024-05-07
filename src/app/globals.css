@@ -104,7 +104,7 @@ table th {
   padding: 12px;
   font-weight: 450;
   text-align: left;
-  border-bottom: 1px solid #9ca4ab;
+  /* border-bottom: 1px solid #9ca4ab; */
   color: #9ca4ab;
   white-space: nowrap;
 }
@@ -127,12 +127,23 @@ input[type="radio"] + label {
   cursor: pointer;
 }
 
+div.table_file {
+  padding-left: 1rem;
+}
+
 input[type="radio"] + label::before {
   content: "";
   position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border: 2px solid #3e4d85;
+  border-radius: 5px;
+}
+
+div.box_file {
   width: 18px;
   height: 18px;
   border: 2px solid #3e4d85;

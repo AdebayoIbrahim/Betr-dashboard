@@ -16,7 +16,7 @@ const History = ({ content }) => {
 
         {/* call-to-action-areas */}
 
-        <div className="c-t-a-history pt-2 flex justify-between items-center pr-2">
+        <div className="c-t-a-history pt-6 flex justify-between items-center pr-2">
           <h4 className="text-[0.9rem] text-[#d9f0e5]">All Files</h4>
           <div className="flex items-center gap-x-4">
             <button className="text-[.78rem] font-[450]">Download</button>
@@ -28,11 +28,15 @@ const History = ({ content }) => {
         </div>
 
         {/* entitled_benefits_list */}
-        <div className="w-ful pt-2 table_cont">
+        <div className="w-ful pt-6 table_cont">
           <table className="w-full ">
             <thead>
+              {/* select-all-mock */}
               <tr>
-                <th className="text-[15px]">File Name</th>
+                <th className="text-[15px] flex items-center gap-x-3">
+                  <div className="box_file"></div>
+                  <div className="table_file">File Name</div>
+                </th>
                 <th className="text-[15px]">Size</th>
                 <th className="text-[15px]">Create Date</th>
                 <th className="text-[15px]">Note Version</th>
