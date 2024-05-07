@@ -206,4 +206,7 @@ input[type="radio"]:checked + label::before {
   .size_table {
     min-width: 95px;
   }
+  .table_file {
+    min-width: calc(95px * 2);
+  }
 }
