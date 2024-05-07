@@ -19,10 +19,10 @@ const History = ({ content }) => {
           <table className="w-full ">
             <thead>
               <tr>
-                <th>Name</th>
-                <th>Date</th>
-                <th>Version</th>
-                <th>Data</th>
+                <th className="text-[15px]">File Name</th>
+                <th className="text-[15px]">Size</th>
+                <th className="text-[15px]">Create Date</th>
+                <th className="text-[15px]">Web Address</th>
               </tr>
             </thead>
             {histories.map((hist) => {

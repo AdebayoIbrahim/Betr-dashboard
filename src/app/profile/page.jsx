@@ -24,7 +24,7 @@ const Dashboard = () => {
           {/* grid-layout */}
           {/* container-major */}
           <section className="details_container relative">
-            <div className="absolute w-full h-[2px] top-[2.8rem]  bg-[#17213d]"></div>
+            <div className="line_dash absolute w-full h-[2px] top-[2.8rem]  bg-[#17213d]"></div>
             {userProfiles.map((user) => {
               return (
                 <div className="grid_layout_details px-[9.2rem]" key={user.id}>

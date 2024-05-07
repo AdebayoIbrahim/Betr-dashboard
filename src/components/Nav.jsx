@@ -11,7 +11,7 @@ const Nav = () => {
       <nav className="flex justify-between bg-[#222943] px-[7rem] py-[.5rem]">
         <Link className="flex justify-center items-center gap-x-3" href="#">
           <Image src={Betr} />
-          <p className="text-white font-bold text-[1.2rem]">Betr Beta</p>
+          <p className="text-white font-[600] text-[1.2rem]">Betr Beta</p>
         </Link>
 
         <div className="nav_flex_2 flex gap-5 items-center">

@@ -145,6 +145,9 @@ table td {
     grid-column: 1 / span 3;
     text-align: center;
   }
+  .line_dash {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -162,5 +165,5 @@ table td {
     display: none;
   }
 }
-@media only screen and (max-width: ) {
-}
+/* @media only screen and (max-width: ) {
+} */
