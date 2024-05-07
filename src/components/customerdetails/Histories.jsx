@@ -22,6 +22,7 @@ const History = ({ content }) => {
                 <th className="text-[15px]">File Name</th>
                 <th className="text-[15px]">Size</th>
                 <th className="text-[15px]">Create Date</th>
+                <th className="text-[15px]">Note Version</th>
                 <th className="text-[15px]">Web Address</th>
               </tr>
             </thead>
@@ -31,13 +32,16 @@ const History = ({ content }) => {
                   <tbody>
                     <tr>
                       <td className="text-[#7187df]">{hist.Releasename}</td>
-                      <td className="text-[#737373]">{hist.dateGenerated}</td>
+                      <td className="text-[#737373]">{hist.size}</td>
+                      <td className="text-[#dbaab2] text-left">
+                        {hist.dateGenerated}
+                      </td>
                       <td className="text-[#dbaab2] text-left">
                         {hist.noteVersion}
                       </td>
                       <td className="flex items-center gap-2 text-[13px] text-[#b1a9d1] hover:underline cursor-pointer">
                         <Image src={downld} alt="download" />
-                        <p>Download</p>
+                        <p>View</p>
                       </td>
                     </tr>
                   </tbody>

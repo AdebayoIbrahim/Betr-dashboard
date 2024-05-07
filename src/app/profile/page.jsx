@@ -21,13 +21,14 @@ const Dashboard = () => {
             </div>
           </section>
           {/* profile_dashboard_details */}
-          {/* grid-layout */}
-          {/* container-major */}
           <section className="details_container relative">
             <div className="line_dash absolute w-full h-[2px] top-[2.8rem]  bg-[#17213d]"></div>
             {userProfiles.map((user) => {
               return (
-                <div className="grid_layout_details px-[9.2rem]" key={user.id}>
+                <div
+                  className="grid_layout_details pl-[9.2rem] pr-[1.2rem]"
+                  key={user.id}
+                >
                   {/* grid_sub_one==usernames*/}
                   <BasicDetails content={user} />
                   {/* main_sub_grid_two */}

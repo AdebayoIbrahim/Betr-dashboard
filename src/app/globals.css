@@ -23,11 +23,11 @@ body {
 }
 .grid_layout_details {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   /* gap: 1.4rem; */
 }
 .grid_sub_two {
-  grid-column: span 2;
+  grid-column: 2 / span 4;
 }
 
 /* conditional syling of currently clicked button*/
@@ -121,17 +121,6 @@ table td {
     padding-inline: 0px;
     row-gap: 1.2rem;
     padding-bottom: 2rem;
-  }
-  .grid_sub_two {
-    /* padding-right: 2em; */
-    /* grid-column: span 3; */
-  }
-  .grid_sub_one {
-  }
-  .info_names {
-    /* display: flex;
-    align-items: center;
-    gap: 2rem; */
   }
 }
 

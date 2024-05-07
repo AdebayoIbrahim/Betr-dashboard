@@ -39,7 +39,7 @@ const Maininfo = ({ content }) => {
         </button>
       </div>
       {/* dynamic-content-rendering */}
-      <setcion className="detailssub_content block mt-[2rem]">
+      <setcion className="detailssub_content block mt-[1.3rem]">
         {/* rendering-contents */}
         {active === "active_btn" ? (
           <Accessibles content={content} />
