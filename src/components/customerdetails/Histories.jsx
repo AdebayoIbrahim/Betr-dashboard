@@ -61,7 +61,7 @@ const History = ({ content }) => {
                   <div className="box_file"></div>
                   <div className="table_file">File Name</div>
                 </th>
-                <th className="text-[15px]">Size</th>
+                <th className="text-[15px] size_table">Size</th>
                 <th className="text-[15px]">Create Date</th>
                 <th className="text-[15px]">Note Version</th>
                 <th className="text-[15px]">Web Address</th>
