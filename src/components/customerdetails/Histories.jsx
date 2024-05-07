@@ -39,12 +39,21 @@ const History = ({ content }) => {
                 <th className="text-[15px]">Web Address</th>
               </tr>
             </thead>
-            {histories.map((hist) => {
+            {histories.map((hist, index) => {
               return (
                 <>
-                  <tbody>
+                  <tbody key={index}>
                     <tr>
-                      <td className="text-[#7187df]">{hist.Releasename}</td>
+                      <td className="flex items-center text-[#7187df] min-w-[12rem] cursor-pointer gap-x-2">
+                        <input
+                          type="radio"
+                          name="filename"
+                          id={`data${index}`}
+                        />
+                        <label htmlFor={`data${index}`} className="">
+                          {hist.Releasename}
+                        </label>
+                      </td>
                       <td className="text-[#737373]">{hist.size}</td>
                       <td className="text-[#dbaab2] text-left">
                         {hist.dateGenerated}

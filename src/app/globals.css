@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*,
+*:is(:after, :before) {
+  box-sizing: border-box;
+}
 :root {
   --nav-bg: #222943;
   --body-bg: #1a202c;
@@ -111,6 +115,32 @@ table tr {
 
 table td {
   padding: 12px;
+}
+
+input[type="radio"] {
+  display: none; /* Hide the default radio button */
+}
+
+input[type="radio"] + label {
+  position: relative;
+  padding-left: 3rem;
+  cursor: pointer;
+}
+
+input[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border: 2px solid #3e4d85;
+  border-radius: 5px;
+}
+
+input[type="radio"]:checked + label::before {
+  background-color: rgb(69, 201, 253);
 }
 
 @media only screen and (max-width: 1055px) {
