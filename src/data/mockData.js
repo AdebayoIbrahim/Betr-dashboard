@@ -36,6 +36,12 @@ const userProfiles = [
         noteVersion: "5.1.0",
         size: "10 MB",
       },
+      {
+        Releasename: "Accesible Payment",
+        dateGenerated: "21/02/2024",
+        noteVersion: "3.1.0",
+        size: "15 MB",
+      },
     ],
   },
 ];

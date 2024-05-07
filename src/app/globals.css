@@ -91,11 +91,10 @@ body {
   color: rgb(99, 199, 199);
 }
 .table_cont {
-  width: 100%;
   overflow-x: auto;
 }
 table {
-  /* width: 100%; */
+  width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
 }
@@ -199,3 +198,7 @@ input[type="radio"]:checked + label::before {
 } */
 
 /* MEDIA_QUERIES_ALL */
+@media only screen and (max-width: ) {
+  html {
+  }
+}
