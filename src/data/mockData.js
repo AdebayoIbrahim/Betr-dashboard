@@ -42,6 +42,12 @@ const userProfiles = [
         noteVersion: "3.1.0",
         size: "15 MB",
       },
+      {
+        Releasename: "NewUI",
+        dateGenerated: "21/02/2024",
+        noteVersion: "6.1.0",
+        size: "12 MB",
+      },
     ],
   },
 ];
